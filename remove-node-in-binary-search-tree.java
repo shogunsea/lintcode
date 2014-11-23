@@ -80,7 +80,8 @@ public class Solution {
             
             // if preParent is null, parent is runner.
             runner.val = pre.val;
-            
+            // Key observation here: predecessor can either has no children
+            // or at most has only left child.
             if (pre.left == null) {
                 if (preParent == null) {
                     runner.left = null;
