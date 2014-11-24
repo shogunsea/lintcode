@@ -1,0 +1,1 @@
+lintcode solutions in java.
