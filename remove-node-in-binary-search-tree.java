@@ -96,6 +96,25 @@ public class Solution {
                     preParent.right = pre.left;
                 }
             }
+
+
+            // #####or:
+            // // key observation here: predecessor could have no children 
+            // // or only one left subtree.
+            // if (pre.left == null) {
+            //     // remove the pre.
+            //     if (preParent.left == pre) {
+            //         preParent.left = null;
+            //     } else {
+            //         preParent.right = null;
+            //     }
+            // } else {
+            //     if (preParent.left == pre) {
+            //         preParent.left = pre.left;
+            //     } else {
+            //         preParent.right = pre.left;
+            //     }
+            // }
             
         }
         
